@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -27,7 +28,6 @@
         </ul>
       </nav>
       <section class="intro">
-        <img class="intro__image" src="http://placehold.it/320x237" width="320" height="237" alt="Фото">
         <p class="intro__caption">Конкурс на самое безбашенное путешествие с Пинк</p>
       </section>
     </header>
@@ -35,18 +35,24 @@
       <h1 class="visually-hidden">Конкурс Pink</h1>
       <section class="contest">
         <h2 class="visually-hidden">Форма участника конкурса</h2>
-        <p class="contest__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="contest__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__name-input">
-            <label class="label" for="surname-field">Фамилия:</label>
-            <input id="surname-field" class="input-text" name="surname" type="text" placeholder="Укажите фамилию *" required>
-            <label class="label" for="name-field">Имя:</label>
-            <input id="name-field" class="input-text" name="name" type="text" placeholder="Введите ваше имя *" required>
-            <label class="label" for="patronymic-field">Отчество:</label>
-            <input id="patronymic-field" class="input-text" name="patronymic" type="text" placeholder="Ну и отчество тоже">
+          <fieldset class="form__name">
+            <div class="form__name-input">
+              <label class="label" for="surname-field">Фамилия:</label>
+              <input id="surname-field" class="input-text" name="surname" type="text" value="Укажите фамилию *" required>
+            </div>
+            <div class="form__name-input">
+              <label class="label" for="name-field">Имя:</label>
+              <input id="name-field" class="input-text" name="name" type="text" value="Введите ваше имя *" required>
+            </div>
+            <div class="form__name-input">
+              <label class="label" for="patronymic-field">Отчество:</label>
+              <input id="patronymic-field" class="input-text" name="patronymic" type="text" value="Ну и отчество тоже">
+            </div>
           </fieldset>
           <fieldset class="form__achievements">
-            <legend class="label">Ваши безбашенные достижения в путешествии</legend>
+            <p class="label label--centered">Ваши безбашенные достижения в путешествии</p>
             <ul class="form__achievements-list">
               <li class="form__achievement">
                 <input id="selfie" class="checkbox" type="checkbox" name="selfie" checked>
@@ -75,13 +81,17 @@
             </ul>
           </fieldset>
           <fieldset class="form__contacts">
-            <label class="label" for="phone-field">Номер телефона</label>
-            <input id="phone-field" class="input-text" name="phone" type="tel" placeholder="Номер, пожалуйста">
-            <label class="label" for="email-field">Адрес почты</label>
-            <input id="email-field" class="input-text" name="e-mail" type="email" placeholder="Введите почту *" required>
+            <div class="form__contacts-input">
+              <label class="label" for="phone-field">Номер телефона</label>
+              <input id="phone-field" class="input-text" name="phone" type="tel" value="Номер, пожалуйста">
+            </div>
+            <div class="form__contacts-input">
+              <label class="label" for="email-field">Адрес почты</label>
+              <input id="email-field" class="input-text" name="e-mail" type="email" value="Введите почту *" required>
+            </div>
           </fieldset>
           <fieldset class="form__applications">
-            <legend class="label">С каким приложением путешествовали?</legend>
+            <p class="label label--centered">С каким приложением путешествовали?</p>
             <ul class="form__applications-list">
               <li class="form__application-item">
                 <input id="application-ios" class="radio" type="radio" name="application" checked>
@@ -98,8 +108,8 @@
             </ul>
           </fieldset>
           <fieldset class="form__impressions">
-            <legend class="label">Опишите свои эмоции</legend>
-            <textarea class="textarea" name="impressions" cols="25" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <p class="label label--centered">Опишите свои эмоции</p>
+            <textarea class="form__textarea" name="impressions" cols="25" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <button class="form-button" type="submit">Отправить форму</button>
           <p class="form__note"><sup>*</sup> — обязательные поля</p>
