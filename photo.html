@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -27,7 +28,6 @@
         </ul>
       </nav>
       <section class="intro">
-        <img class="intro__image" src="http://placehold.it/320x237" width="320" height="237" alt="Фото">
         <p class="intro__caption">Фотографии пользователей</p>
       </section>
     </header>
@@ -39,7 +39,7 @@
         <article class="panorama">
           <h2 class="visually-hidden">Панорама дня</h2>
           <a class="panorama__image" href="#">
-            <img src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
+            <img src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
           </a>
           <div class="comment">
             <b class="comment__author">Анна</b>
@@ -51,7 +51,7 @@
         <article class="post">
           <h2 class="visually-hidden">Пост пользователя Pink</h2>
           <a class="post__image" href="#">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото">
+            <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото">
           </a>
           <div class="comment">
             <b class="comment__author">Левон</b>
@@ -63,7 +63,7 @@
         <article class="post">
           <h2 class="visually-hidden">Пост пользователя Pink</h2>
           <a class="post__image" href="#">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото">
+            <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото">
           </a>
           <div class="comment">
             <b class="comment__author">Антон</b>
@@ -75,7 +75,7 @@
         <article class="post">
           <h2 class="visually-hidden">Пост пользователя Pink</h2>
           <a class="post__image" href="#">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото">
+            <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото">
           </a>
           <div class="comment">
             <b class="comment__author">Борис</b>
@@ -87,7 +87,7 @@
         <article class="post">
           <h2 class="visually-hidden">Пост пользователя Pink</h2>
           <a class="post__image" href="#">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото">
+            <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото">
           </a>
           <div class="comment">
             <b class="comment__author">Сергей</b>
@@ -99,7 +99,7 @@
         <article class="post">
           <h2 class="visually-hidden">Пост пользователя Pink</h2>
           <a class="post__image" href="#">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото">
+            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото">
           </a>
           <div class="comment">
             <b class="comment__author">Максим</b>
@@ -111,7 +111,7 @@
         <article class="post">
           <h2 class="visually-hidden">Пост пользователя Pink</h2>
           <a class="post__image" href="#">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото">
+            <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото">
           </a>
           <div class="comment">
             <b class="comment__author">Надежда</b>
@@ -123,13 +123,13 @@
       </section>
       <section class="add-post">
         <h2 class="visually-hidden">Добавьте свой пост</h2>
-        <p class="add-post__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="add-post__slogan">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
         <form class="post-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="post-form__picture">
-            <img class="post-form__image" src="http://placehold.it/280x374" width="280" height="374" alt="Фото">
+            <img class="post-form__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото">
           </div>
           <input class="post-form__range" type="range">
-          <button class="button button--add-post" type="submit">Запостить</button>
+          <button class="button button--post" type="submit">Запостить</button>
           <button class="button button--reset" type="reset">Отмена</button>
         </form>
       </section>
