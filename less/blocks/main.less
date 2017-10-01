@@ -1,17 +1,21 @@
-.panorama__image {
-  display: block;
-  height: 137px;
-  background-color: @gray;
+.main {
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
-  .panorama__image {
+  .main {
     width: 660px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .panorama__image {
+  .main {
     width: 1200px;
+  }
+
+  .main__container {
+    width: 960px;
+    margin: 0 auto;
   }
 }

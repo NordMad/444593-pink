@@ -2,4 +2,43 @@
   display: block;
   height: 180px;
   margin: 0 20px;
+  background-color: @gray;
+}
+
+@media (min-width: @tablet-width) {
+  .album__container {
+    display: flex;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post {
+    box-sizing: border-box;
+    width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .post__image {
+    height: 300px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .album__container {
+    width: 940px;
+    padding: 0 10px;
+  }
+
+  .post {
+    margin-bottom: 54px;
+  }
+
+  .post__image {
+    height: 400px;
+  }
 }

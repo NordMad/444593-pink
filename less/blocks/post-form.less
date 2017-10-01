@@ -2,3 +2,31 @@
   background-color: @light-gray;
   padding: 20px 20px 40px;
 }
+
+@media (min-width: @tablet-width) {
+  .post-form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post-form__controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post-form {
+    justify-content: space-around;
+  }
+
+  .post-form__controls {
+    width: 410px;
+  }
+
+  .post-form__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
