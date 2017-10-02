@@ -61,35 +61,37 @@
                 <input id="patronymic-field" class="form__input-text" name="patronymic" type="text" value="Ну и отчество тоже">
               </div>
             </fieldset>
-            <fieldset class="form__achievements">
-              <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="form__achievements-list">
-                <li class="form__achievement">
-                  <input id="selfie" class="checkbox" type="checkbox" name="selfie" checked>
-                  <label for="selfie">Сделал селфи с акулой</label>
-                </li>
-                <li class="form__achievement">
-                  <input id="sunburn" class="checkbox" type="checkbox" name="sunburn" checked>
-                  <label for="sunburn">Обгорел на пляже</label>
-                </li>
-                <li class="form__achievement">
-                  <input id="chucky" class="checkbox" type="checkbox" name="chucky">
-                  <label for="chucky">Видел Чака Норриса</label>
-                </li>
-                <li class="form__achievement">
-                  <input id="souvenirs" class="checkbox" type="checkbox" name="souvenirs">
-                  <label for="souvenirs">Накупил сувениров</label>
-                </li>
-                <li class="form__achievement">
-                  <input id="defender" class="checkbox" type="checkbox" name="defender" checked>
-                  <label for="defender">Удержал башню</label>
-                </li>
-                <li class="form__achievement">
-                  <input id="destroyer" class="checkbox" type="checkbox" name="destroyer">
-                  <label for="destroyer">Разгромил отель</label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="form__achievements-block">
+              <fieldset class="form__achievements">
+                <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="form__achievements-list">
+                  <li class="form__achievement">
+                    <input id="selfie" class="checkbox" type="checkbox" name="selfie" checked>
+                    <label for="selfie">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="form__achievement">
+                    <input id="sunburn" class="checkbox" type="checkbox" name="sunburn" checked>
+                    <label for="sunburn">Обгорел на пляже</label>
+                  </li>
+                  <li class="form__achievement">
+                    <input id="chucky" class="checkbox" type="checkbox" name="chucky">
+                    <label for="chucky">Видел Чака Норриса</label>
+                  </li>
+                  <li class="form__achievement">
+                    <input id="souvenirs" class="checkbox" type="checkbox" name="souvenirs">
+                    <label for="souvenirs">Накупил сувениров</label>
+                  </li>
+                  <li class="form__achievement">
+                    <input id="defender" class="checkbox" type="checkbox" name="defender" checked>
+                    <label for="defender">Удержал башню</label>
+                  </li>
+                  <li class="form__achievement">
+                    <input id="destroyer" class="checkbox" type="checkbox" name="destroyer">
+                    <label for="destroyer">Разгромил отель</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <fieldset class="form__contacts">
               <legend class="form__legend form__legend--hidden">Контактная информация</legend>
               <div class="form__contacts-block">
@@ -103,23 +105,25 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="form__applications">
-              <legend class="form__legend">С каким приложением путешествовали?</legend>
-              <ul class="form__applications-list">
-                <li class="form__application-item">
-                  <input id="application-ios" class="radio" type="radio" name="application" checked>
-                  <label for="application-ios">Pink для iOS</label>
-                </li>
-                <li class="form__application-item">
-                  <input id="application-android" class="radio" type="radio" name="application">
-                  <label for="application-android">Pink на Android</label>
-                </li>
-                <li class="form__application-item">
-                  <input id="application-windows" class="radio" type="radio" name="application">
-                  <label for="application-windows">Windows Phone</label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="form__applications-block">
+              <fieldset class="form__applications">
+                <legend class="form__legend">С каким приложением путешествовали?</legend>
+                <ul class="form__applications-list">
+                  <li class="form__application-item">
+                    <input id="application-ios" class="radio" type="radio" name="application" checked>
+                    <label for="application-ios">Pink для iOS</label>
+                  </li>
+                  <li class="form__application-item">
+                    <input id="application-android" class="radio" type="radio" name="application">
+                    <label for="application-android">Pink на Android</label>
+                  </li>
+                  <li class="form__application-item">
+                    <input id="application-windows" class="radio" type="radio" name="application">
+                    <label for="application-windows">Windows Phone</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <fieldset class="form__impressions">
               <legend class="form__legend">Опишите свои эмоции</legend>
               <textarea class="form__textarea" name="impressions" cols="24" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>

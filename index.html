@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="container container--header">
         <section class="header__menu">
           <div class="header__logo-block">
             <a class="header__logo">
@@ -56,8 +56,8 @@
     </header>
     <main class="main">
       <h1 class="visually-hidden">Приложение Pink</h1>
-      <div class="main__container">
-        <section class="advantages">
+      <section class="advantages">
+        <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
           <p class="advantages__slogan">Нам есть, что вам <br>предложить!</p>
@@ -78,15 +78,19 @@
             </ul>
             <img class="advantages__phone-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
           </div>
-        </section>
-        <section class="research">
+        </div>
+      </section>
+      <section class="research">
+        <div class="container">
           <h2 class="visually-hidden">Результаты исследования учёными</h2>
           <img class="research__image" src="http://placehold.it/238x276" width="238" height="276" alt="Часы">
           <p class="research__caption">Эффект на 24 часа!</p>
           <p class="research__description">Британские ученые провели исследованияи доказали, что положительный эффект от использования приложения длится целые сутки!</p>
           <a class="research__link" href="#">Узнать больше об исследовании</a>
-        </section>
-        <section class="reviews slider">
+        </div>
+      </section>
+      <section class="reviews slider">
+        <div class="container">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews__item">
             <span class="reviews__author">Николай Петров</span>
@@ -98,68 +102,70 @@
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </p>
-        </section>
-        <section class="rates">
-          <h2 class="visually-hidden">Тарифы</h2>
-          <table class="rates__table">
-            <tr>
-              <th class="rates__name-hidden"></th>
-              <th class="rates__name">
-                База
-                <span class="rates__price">1,99 USD</span>
-              </th>
-              <th class="rates__name rates__name--hit">
-                Стандарт
-                <span class="rates__price">3,99 USD</span>
-              </th>
-              <th class="rates__name">
-                Анлим
-                <span class="rates__price">9,99 USD</span>
-              </th>
-            </tr>
-            <tr>
-              <td class="rates__item rates__item--hidden">Розовый фильтр</td>
-              <td class="rates__item rates__item--included">Розовый фильтр</td>
-              <td class="rates__item rates__item--included">Розовый фильтр</td>
-              <td class="rates__item rates__item--included">Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td class="rates__item rates__item--hidden">Смайлики</td>
-              <td class="rates__item">Смайлики</td>
-              <td class="rates__item rates__item--included">Смайлики</td>
-              <td class="rates__item rates__item--included">Смайлики</td>
-            </tr>
-            <tr>
-              <td class="rates__item rates__item--hidden">Комментарии</td>
-              <td class="rates__item">Комментарии</td>
-              <td class="rates__item">Комментарии</td>
-              <td class="rates__item rates__item--included">Комментарии</td>
-            </tr>
-          </table>
-          <p class="rates__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </section>
-      </div>
+        </div>
+      </section>
+      <section class="rates">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <table class="rates__table">
+          <tr>
+            <th class="rates__name-hidden"></th>
+            <th class="rates__name">
+              База
+              <span class="rates__price">1,99 USD</span>
+            </th>
+            <th class="rates__name rates__name--hit">
+              Стандарт
+              <span class="rates__price">3,99 USD</span>
+            </th>
+            <th class="rates__name">
+              Анлим
+              <span class="rates__price">9,99 USD</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="rates__item rates__item--hidden">Розовый фильтр</td>
+            <td class="rates__item rates__item--included">Розовый фильтр</td>
+            <td class="rates__item rates__item--included">Розовый фильтр</td>
+            <td class="rates__item rates__item--included">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="rates__item rates__item--hidden">Смайлики</td>
+            <td class="rates__item">Смайлики</td>
+            <td class="rates__item rates__item--included">Смайлики</td>
+            <td class="rates__item rates__item--included">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="rates__item rates__item--hidden">Комментарии</td>
+            <td class="rates__item">Комментарии</td>
+            <td class="rates__item">Комментарии</td>
+            <td class="rates__item rates__item--included">Комментарии</td>
+          </tr>
+        </table>
+        <p class="rates__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__call">Остались вопросы?<br>Свяжитесь с нами!</p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <span class="contacts__caption">Звоните:</span>
-            <p class="contacts__description"><a href="#">+7 (812) 555-66-66</a></p>
-          </li>
-          <li class="contacts__item">
-            <span class="contacts__caption">Пишите:</span>
-            <p class="contacts__description"><a href="#">mail@htmlacademy.ru</a></p>
-          </li>
-          <li class="contacts__item">
-            <span class="contacts__caption">Приезжайте в гости:</span>
-            <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
+        <div class="container">
+          <p class="contacts__call">Остались вопросы?<br>Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span class="contacts__caption">Звоните:</span>
+              <p class="contacts__description"><a href="#">+7 (812) 555-66-66</a></p>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__caption">Пишите:</span>
+              <p class="contacts__description"><a href="#">mail@htmlacademy.ru</a></p>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__caption">Приезжайте в гости:</span>
+              <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
         <div class="contacts__map">
           <img src="img/bg-map-mobile@1x.png" width="320" height="421"  alt="карта">
         </div>

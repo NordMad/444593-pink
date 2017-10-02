@@ -37,6 +37,10 @@
   }
 }
 
+.form__achievements-block {
+  background-color: @light-gray;
+}
+
 .form__achievements {
   .contacts-field();
 }
@@ -53,6 +57,10 @@
   display: flex;
   padding: 10px 0;
   flex-direction: column;
+}
+
+.form__applications-block {
+  background-color: @light-gray;
 }
 
 .form__applications {
@@ -102,6 +110,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .form__achievements-block,
+  .form__applications-block {
+    background-color: @white;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -116,7 +129,7 @@
     width: 45%;
   }
 
-  .form__applications {
+  .form__applications-block {
     order: 2;
     width: 45%;
   }
@@ -137,7 +150,7 @@
     width: 44%;
   }
 
-  .form__achievements {
+  .form__achievements-block {
     width: 100%;
     order: 4;
   }
