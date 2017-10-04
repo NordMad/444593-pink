@@ -1,9 +1,6 @@
 .advantages {
-  padding: 30px 30px 10px;
   text-align: center;
-  background-image: url("../img/shape.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  background-color: @light-gray;
 }
 
 .advantages__slogan {
@@ -11,11 +8,37 @@
 }
 
 .advantages__list {
-  padding: 40px 0 10px;
+  padding: 40px 10px 10px;
 }
 
 .advantages__caption {
   color: @black;
   font-size: 18px;
   font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__block {
+    display: flex;
+    min-height: 481px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .advantages__list {
+    width: 310px;
+    padding: 20px 0 20px 10px;
+    text-align: left;
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__block {
+    display: block;
+  }
+
+  .advantages__phone-image {
+    display: none;
+  }
 }

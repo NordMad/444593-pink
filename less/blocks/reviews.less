@@ -1,5 +1,5 @@
 .reviews {
-  padding: 48px 20px 90px;
+  padding: 40px 0;
   text-align: center;
 }
 
@@ -11,4 +11,40 @@
   color: @black;
   font-size: 18px;
   font-weight: 700;
+}
+
+.reviews__info {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author {
+    order: 1;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__info {
+    display: block;
+    line-height: 30px;
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    padding: 40px 0;
+  }
+
+  .reviews__item {
+    padding: 0 115px;
+  }
 }

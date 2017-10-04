@@ -1,3 +1,7 @@
+.site-nav {
+  margin-bottom: -69px;
+}
+
 .site-nav__item {
   padding: 15px 85px;
   font-size: 18px;
@@ -5,8 +9,36 @@
   line-height: 32px;
   text-align: center;
   text-transform: uppercase;
+  background-color: @base-color;
 }
 
 .site-nav__item > a {
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .site-nav {
+    margin-bottom: -110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-nav {
+    margin-bottom: 0;
+  }
+
+  .site-nav__list {
+    display: flex;
+    width: 620px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-nav__item {
+    padding: 0;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-transform: none;
+  }
 }

@@ -1,4 +1,18 @@
 .panorama__image {
   display: block;
   height: 137px;
+  background-color: @gray;
+}
+
+@media (min-width: @tablet-width) {
+  .panorama__image {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .panorama__image {
+    width: 1200px;
+  }
 }

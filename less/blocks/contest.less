@@ -1,3 +1,35 @@
+.contest__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .contest__slogan {
   .intro-text();
+}
+
+.contest__slogan-hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contest__container {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .contest__slogan {
+    font-size: 18px;
+    padding: 90px 80px 50px;
+  }
+
+  .contest__slogan-hidden {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest__container {
+    width: 940px;
+    padding: 0 10px;
+  }
 }

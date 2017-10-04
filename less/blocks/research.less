@@ -1,0 +1,33 @@
+.research {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: block;
+    padding: 20px 0;
+    background-color: @light-gray;
+  }
+
+  .research::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .research__image {
+    float: left;
+    margin-right: 71px;
+  }
+
+  .research__caption {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .research__link {
+    color: @pink;
+    text-decoration: underline;
+  }
+}

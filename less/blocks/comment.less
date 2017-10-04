@@ -14,3 +14,24 @@
   font-size: 12px;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .comment {
+    box-sizing: border-box;
+    min-height: 155px;
+    margin: 0;
+    padding: 20px 27px 10px;
+  }
+
+  .comment--panorama {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment--panorama {
+    width: 940px;
+  }
+}

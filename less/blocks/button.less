@@ -1,6 +1,8 @@
 .button {
   display: block;
-  padding: 15px 20px;
+  width: 235px;
+  padding: 15.5px 20px;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -22,5 +24,19 @@
   &--reset {
     opacity: 0.1;
     background-color: transparent;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    width: 254px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--post,
+  .button--reset {
+    width: 183px;
+    margin: 0;
   }
 }
