@@ -9,25 +9,35 @@
 
 .header__logo-block {
   display: flex;
-  padding: 21px 20px 25px;
+  height: 70px;
+  padding: 21px 20px;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
+  background-color: fade(@black, 0);
+  border-bottom: 1px solid @black;
 }
 
 .header__logo {
   height: 22px;
 }
 
+.header__toggle {
+  height: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
 @media (min-width: @tablet-width) {
   .header__logo-block {
-    min-height: 63px;
+    height: 110px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .header__menu {
     display: flex;
-    height: 70px;
     margin-bottom: -110px;
     padding: 20px 10px;
     justify-content: space-between;
@@ -35,7 +45,10 @@
   }
 
   .header__logo-block {
+    height: auto;
+    min-height: 70px;
     padding: 0;
+    border: none;
   }
 
   .header__toggle {

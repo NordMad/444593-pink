@@ -8,8 +8,9 @@
 
 .intro__caption {
   margin: 0;
-  padding: 93px 45px 53px;
+  padding: 95px 45px 53px;
   color: @white;
+  line-height: 30px;
   .main-slogan();
 }
 
@@ -19,14 +20,18 @@
   }
 
   .intro__caption {
-    padding: 190px 90px 55px;
+    padding: 180px 90px 55px;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .intro {
     min-height: 394px;
+  }
+
+  .intro__caption {
+    padding-top: 175px;
   }
 }

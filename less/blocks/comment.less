@@ -1,32 +1,110 @@
 .comment {
-  margin: 0 20px 20px;
-  padding: 23px 17px;
+  width: 280px;
+  margin-bottom: 20px;
+  padding: 18px;
+  box-sizing: border-box;
   background-color: @light-gray;
+
+  &--panorama {
+    margin: 0 auto 20px;
+  }
+}
+
+.comment__name {
+  margin: 0;
 }
 
 .comment__time {
   font-size: 12px;
   font-weight: 300;
+  text-transform: uppercase;
+}
+
+.comment__message {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .comment__like {
+  position: relative;
+  padding-left: 32px;
   color: @pink;
   font-size: 12px;
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 2.5px;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/icon-heart.svg");
+    background-position: center;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .comment {
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
     min-height: 155px;
     margin: 0;
-    padding: 20px 27px 10px;
+    padding: 23px 28px;
+  }
+
+  .comment__message {
+    margin-bottom: auto;
+  }
+
+  .comment__like {
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      right: 2px;
+      top: 6px;
+      width: 13px;
+      height: 12px;
+      background-image: url("../img/icon-heart.svg");
+      background-position: center;
+    }
   }
 
   .comment--panorama {
     width: 620px;
+    min-height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .comment__like--panorama  {
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 32px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 6px;
+      width: 13px;
+      height: 12px;
+      background-image: url("../img/icon-heart.svg");
+      background-position: center;
+    }
+  }
+
+  .comment__message--panorama {
+    margin-bottom: 0;
+    order: 1;
   }
 }
 

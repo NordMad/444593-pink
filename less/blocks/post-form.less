@@ -1,12 +1,68 @@
 .post-form {
   background-color: @light-gray;
-  padding: 20px 20px 40px;
+}
+
+.post-form__picture {
+  width: 280px;
+  height: 374px;
+  padding: 20px 20px 0;
+}
+
+.post-form__controls-block {
+  display: flex;
+  min-height: 121px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid @gray;
+}
+
+.post-form__controls-list {
+  width: 198px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-form__buttons {
+  padding: 40px 20px;
 }
 
 @media (min-width: @tablet-width) {
   .post-form {
+    padding: 55px 20px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .post-form__picture {
+    width: 260px;
+    height: 380px;
+    background-color: @gray;
+  }
+
+  .post-form__controls-block {
+    padding: 0;
+    border: none;
+  }
+
+  .post-form__controls-list {
+    width: 275px;
+    height: 200px;
+    flex-direction: column;
+  }
+
+  .post-form__controls-item {
+    display: flex;
+    align-items: center;
+    height: 69px;
+    border-bottom: 1px solid @gray;
+  }
+
+  .post-form__controls-item svg {
+    width: 24px;
+    height: 24px;
   }
 
   .post-form__controls {
@@ -14,18 +70,39 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .post-form__range {
+    display: none;
+  }
+
+  .post-form__buttons {
+    width: 300px;
+    padding: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .post-form {
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 57px 60px;
+  }
+
+  .post-form__picture {
+    margin: 0 20px;
   }
 
   .post-form__controls {
     width: 410px;
   }
 
+  .post-form__controls-list {
+    width: 410px;
+    height: 200px;
+    flex-direction: column;
+  }
+
   .post-form__buttons {
+    width: 410px;
     display: flex;
     justify-content: space-between;
   }
