@@ -1,24 +1,40 @@
 .album__slogan {
-  .intro-text();
+  width: 280px;
+  margin: 0 auto;
+  padding: 48px 15px;
+  box-sizing: border-box;
+  line-height: 30px;
+  text-align: center;
 }
 
 .album__container {
-  width: 320px;
-  margin: auto;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 
 @media (min-width: @tablet-width) {
+  .album__slogan {
+    width: 450px;
+    font-size: 18px;
+    padding: 90px 0 80px;
+  }
+
   .album__container {
     display: flex;
     width: 620px;
-    padding: 0 20px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .album__slogan {
+    width: 600px;
+    padding: 93px 0 87px;
+  }
+
   .album__container {
     width: 940px;
     padding: 0 10px;

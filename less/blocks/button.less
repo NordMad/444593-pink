@@ -1,7 +1,7 @@
 .button {
-  display: block;
   width: 235px;
-  padding: 15.5px 20px;
+  display: block;
+  padding: 14px 20px 17px;
   margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
@@ -15,6 +15,7 @@
   }
 
   &--post {
+    width: 280px;
     margin-bottom: 12px;
     color: @pink;
     border-color: @pink;
@@ -22,6 +23,7 @@
   }
 
   &--reset {
+    width: 280px;
     opacity: 0.1;
     background-color: transparent;
   }
@@ -30,10 +32,22 @@
 @media (min-width: @tablet-width) {
   .button {
     width: 254px;
+
+    &--post {
+      width: 260px;
+      margin-bottom: 20px;
+    }
+    &--reset {
+      width: 260px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .button {
+    font-size: 21px;
+  }
+
   .button--post,
   .button--reset {
     width: 183px;

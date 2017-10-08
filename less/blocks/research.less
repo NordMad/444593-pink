@@ -5,8 +5,7 @@
 @media (min-width: @tablet-width) {
   .research {
     display: block;
-    padding: 20px 0;
-    background-color: @light-gray;
+    padding: 60px 0;
   }
 
   .research::after {
@@ -20,7 +19,13 @@
     margin-right: 71px;
   }
 
+  .research__block {
+    padding: 35px 10px 10px;
+  }
+
   .research__caption {
+    margin: 0;
+    padding-right: 130px;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -29,5 +34,39 @@
   .research__link {
     color: @pink;
     text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    padding: 40px 0 65px;
+    background-color: @light-gray;
+  }
+
+  .research__image {
+    width: 298px;
+    height: 345px;
+    margin-right: 68px;
+  }
+
+  .research__block {
+    padding: 95px 0 20px;
+  }
+
+  .research__caption {
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+
+  .research__description {
+    padding-right: 55px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
