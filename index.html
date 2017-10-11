@@ -47,7 +47,11 @@
           </nav>
         </section>
         <section class="download-app">
-          <img class="download-app__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение Pink">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img class="download-app__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение Pink">
+          </picture>
           <div class="download-app__block">
             <p class="download-app__caption">Взгляните на жизнь иначе!</p>
             <a class="button button--download" href="#">Скачать приложение</a>
@@ -93,35 +97,47 @@
     <main class="main">
       <h1 class="visually-hidden">Приложение Pink</h1>
       <section class="advantages">
-        <div class="container">
-          <h2 class="visually-hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages__slogan-block">
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
           <p class="advantages__slogan">Нам есть, что вам <br>предложить!</p>
-          <div class="advantages__block">
+        </div>
+        <div class="advantages__block">
+          <div class="container container--advantages">
             <ul class="advantages__list">
               <li class="advantages__item">
-                <img class="advantages__phone" src="http://placehold.it/186x301" alt="" width="186" height="301">
+                <img class="advantages__phone" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="" width="292" height="302">
                 <h3 class="advantages__caption">Поднимает настроение</h3>
                 <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="advantages__item">
-                <img class="advantages__phone" src="http://placehold.it/186x301" alt="" width="186" height="301">
+                <img class="advantages__phone" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="" width="292" height="302">
                 <h3 class="advantages__caption">Меняет мир вокруг</h3>
                 <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
               <li class="advantages__item">
-                <img class="advantages__phone" src="http://placehold.it/186x301" alt="" width="186" height="301">
+                <img class="advantages__phone" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="" width="292" height="302">
                 <h3 class="advantages__caption">Заводит новых друзей</h3>
                 <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+              <img class="advantages__iphone" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="iPhone">
+            </picture>
           </div>
         </div>
       </section>
       <section class="research">
         <div class="container">
           <h2 class="visually-hidden">Результаты исследования учёными</h2>
-          <img class="research__image" src="http://placehold.it/238x276" width="238" height="276" alt="Часы">
+          <div class="research__timer">
+            <span>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+                <path fill="#dedede" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+              </svg>
+            </span>
+          </div>
           <div class="research__block">
             <p class="research__caption">Эффект на 24 часа!</p>
             <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -206,9 +222,7 @@
             </li>
           </ul>
         </div>
-        <div class="contacts__map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="421"  alt="карта">
-        </div>
+        <div class="contacts__map"></div>
       </section>
     </main>
     <footer class="footer footer--main">

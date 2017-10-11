@@ -14,9 +14,34 @@
     clear: both;
   }
 
-  .research__image {
+  .research__timer {
+    position: relative;
+    width: 238px;
+    height: 276px;
     float: left;
     margin-right: 71px;
+
+    ::before {
+      position: absolute;
+      content: "";
+      width: 174px;
+      height: 174px;
+      left: 19px;
+      top: 55px;
+      border: 14px solid @pink;
+      border-radius: 50%;
+    }
+
+    ::after {
+      position: absolute;
+      content: "24";
+      left: 64px;
+      top: 80px;
+      color: @pink;
+      font-size: 96px;
+      line-height: 149.5px;
+      font-weight: 700;
+    }
   }
 
   .research__block {
@@ -47,6 +72,27 @@
     width: 298px;
     height: 345px;
     margin-right: 68px;
+  }
+
+  .research__timer {
+    width: 298px;
+    height: 345px;
+    margin-right: 68px;
+
+    ::before {
+      width: 219px;
+      height: 219px;
+      left: 22px;
+      top: 69px;
+      border-width: 17px;
+    }
+
+    ::after {
+      left: 80px;
+      top: 95px;
+      font-size: 120px;
+      line-height: 187px;
+    }
   }
 
   .research__block {
