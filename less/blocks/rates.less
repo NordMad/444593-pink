@@ -4,8 +4,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 85px 0 30px;
+  padding: 91px 0 30px;
   background-color: @light-gray;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
   overflow: hidden;
 }
 
@@ -26,6 +30,37 @@
   background-color: @base-color;
   border: 2px solid @base-color;
   border-right-color: @gray;
+}
+
+.rates__name--hit {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 73px;
+    height: 73px;
+    top: -2px;
+    left: 0;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "хит";
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: @white;
+  }
 }
 
 .rates__name:last-of-type {
@@ -62,13 +97,23 @@
 @media (min-width: @tablet-width) {
   .rates {
     min-height: 218px;
-    padding: 87px 0px 70px;
+    padding: 87px 0 70px;
   }
 
   .rates__name {
     min-width: 153px;
     height: 75px;
     font-size: 16px;
+  }
+
+  .rates__name--hit::before {
+    width: 61px;
+    height: 61px;
+  }
+
+  .rates__name--hit::after {
+    top: 6px;
+    left: 6px;
   }
 
   .rates__name-hidden {
@@ -99,14 +144,23 @@
 
 @media (min-width: @desktop-width) {
   .rates {
-    padding: 95px 10px;
+    padding: 148px 10px;
   }
 
   .rates__name {
     min-width: 234px;
     height: 96px;
     font-size: 18px;
-    border: none;
+  }
+
+  .rates__name--hit::before {
+    width: 71px;
+    height: 71px;
+  }
+
+  .rates__name--hit::after {
+    top: 10px;
+    left: 10px;
   }
 
   .rates__price {

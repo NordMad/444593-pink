@@ -1,27 +1,35 @@
 .advantages {
-  min-height: 1004px;
   text-align: center;
-  background-color: @light-gray;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center 106.25%;
   overflow: hidden;
+}
+
+.advantages__slogan-block {
+  padding-bottom: 35px;
+  background-color: @white;
 }
 
 .advantages__slogan {
   .main-slogan();
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 43px;
   line-height: 28px;
 
   &:last-of-type {
     padding-top: 32px;
-    margin-bottom: 75px;
   }
 }
 
+.advantages__block {
+  background-color: @light-gray;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
 .advantages__list {
-  padding: 20px 10px;
+  padding: 60px 10px 20px;
 }
 
 .advantages__caption {
@@ -47,26 +55,26 @@
   display: none;
 }
 
+.advantages__iphone {
+  position: absolute;
+  left: 83px;
+  bottom: -37px;
+}
+
 @media (min-width: @tablet-width) {
   .advantages {
     min-height: 720px;
     background-image: none;
   }
 
-  .advantages__block {
-    display: flex;
-    min-height: 475px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .advantages__slogan {
+    width: 620px;
     font-size: 40px;
     line-height: 50px;
 
     &:last-of-type {
       padding: 0;
-      margin-bottom: 55px;
+      margin-bottom: 20px;
     }
   }
 
@@ -79,7 +87,13 @@
   }
 
   .advantages__item {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
+  }
+
+  .advantages__iphone {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
   }
 }
 
@@ -89,6 +103,7 @@
   }
 
   .advantages__slogan {
+    width: 940px;
     padding-top: 65.5px;
     font-size: 50px;
     line-height: 60px;
@@ -113,7 +128,7 @@
 
   .advantages__item {
     display: flex;
-    width: 240px;
+    width: 292px;
     min-height: 560px;
     margin: 0;
     flex-direction: column;
@@ -123,9 +138,9 @@
   }
 
   .advantages__phone {
-    width: 186px;
-    height: 301px;
     display: block;
+    width: 292px;
+    height: 302px;
   }
 
   .advantages__caption {
@@ -136,7 +151,12 @@
   }
 
   .advantages__description {
+    padding: 0 20px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .advantages__iphone {
+    display: none;
   }
 }
