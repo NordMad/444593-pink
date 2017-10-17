@@ -53,7 +53,21 @@
   }
 
   .reviews__item {
+    position: relative;
     padding: 0 115px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 79px;
+      height: 63px;
+      top: -120px;
+      left: 433px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   .reviews__author {

@@ -22,6 +22,19 @@
   height: 22px;
 }
 
+.header__logo-icon {
+  margin-left: -72px;
+  margin-top: -18px;
+}
+
+.header__logo-glasses {
+  display: none;
+}
+
+.header__logo-desktop {
+  display: none;
+}
+
 .header__toggle {
   height: auto;
   padding: 0;
@@ -32,6 +45,20 @@
 @media (min-width: @tablet-width) {
   .header__logo-block {
     height: 110px;
+  }
+
+  .header__logo {
+    height: 40px;
+    margin-top: 6px;
+    align-self: flex-start;
+  }
+
+  .header__logo-icon {
+    margin: 0;
+  }
+
+  .header__logo-glasses {
+    display: inline-block;
   }
 }
 
@@ -61,6 +88,18 @@
     min-height: 70px;
     padding: 0;
     border: none;
+  }
+
+  .header__logo-pink {
+    display: none;
+  }
+
+  .header__logo-glasses {
+    display: none;
+  }
+
+  .header__logo-desktop {
+    display: inline-block;
   }
 
   .header__toggle {
