@@ -102,25 +102,24 @@
               </svg>
             </a>
             <button class="header__toggle">
-              <svg class="header__menu-close" width="24" height="23" aria-labelledby="title">
-                <title>Открыть/Закрыть меню</title>
-                <use xlink:href="img/sprite.svg#menu-close"></use>
-              </svg>
+              <span class="visually-hidden">Открыть/Закрыть</span>
+              <object class="header__menu-icon header__menu-icon--hidden" data="img/icon-menu-burger.svg" type="image/svg+xml" width="50" height="24"></object>
+              <object class="header__menu-icon" data="img/icon-menu-cross.svg" type="image/svg+xml" width="24" height="23"></object>
             </button>
           </div>
           <nav class="site-nav">
             <ul class="site-nav__list">
               <li class="site-nav__item">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="site-nav__item site-nav__item--active">
-                <a>Фотографии</a>
+                <a class="site-nav__link" href="index.html">Главная</a>
               </li>
               <li class="site-nav__item">
-                <a href="form.html">Конкурс</a>
+                <a class="site-nav__active">Фотографии</a>
               </li>
               <li class="site-nav__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                <a class="site-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </nav>
@@ -139,6 +138,9 @@
           <h2 class="visually-hidden">Панорама дня</h2>
           <a class="panorama__image" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
@@ -158,6 +160,9 @@
             <h2 class="visually-hidden">Пост пользователя Pink</h2>
             <a class="post__image" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                 <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото">
@@ -176,6 +181,9 @@
             <h2 class="visually-hidden">Пост пользователя Pink</h2>
             <a class="post__image" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                 <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото">
@@ -194,6 +202,9 @@
             <h2 class="visually-hidden">Пост пользователя Pink</h2>
             <a class="post__image" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                 <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото">
@@ -212,6 +223,9 @@
             <h2 class="visually-hidden">Пост пользователя Pink</h2>
             <a class="post__image" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                 <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото">
@@ -230,6 +244,9 @@
             <h2 class="visually-hidden">Пост пользователя Pink</h2>
             <a class="post__image" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                 <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото">
@@ -248,6 +265,9 @@
             <h2 class="visually-hidden">Пост пользователя Pink</h2>
             <a class="post__image" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                 <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото">
@@ -270,6 +290,9 @@
         <form class="post-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="post-form__picture">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
               <img class="post-form__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото">
@@ -279,21 +302,21 @@
             <div class="post-form__controls-block">
               <ul class="post-form__controls-list">
                 <li class="post-form__controls-item">
-                  <svg class="post-form__crop-icon" width="48" height="48" aria-labelledby="title">
+                  <svg class="post-form__crop-icon" width="48" height="48" viewbox="0 0 44 44" aria-labelledby="title">
                     <title>Обрезать</title>
-                    <use xlink:href="img/sprite.svg#crop-icon"></use>
+                    <path fill="none" d="M0 0h48v48H0V0z"/><path fill="#d22856" d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/>
                   </svg>
                 </li>
                 <li class="post-form__controls-item">
-                  <svg class="post-form__fill-icon" width="48" height="43" aria-labelledby="title">
+                  <svg class="post-form__fill-icon" width="48" height="43" viewbox="0 0 48 43" aria-labelledby="title">
                     <title>Заливка</title>
-                    <use xlink:href="img/sprite.svg#fill-icon"></use>
+                    <path fill="none" d="M0 0h48v48H0V0z"/><path fill="#b5b9be" d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
                   </svg>
                 </li>
                 <li class="post-form__controls-item">
-                  <svg class="post-form__contrast-icon" width="32" height="32" aria-labelledby="title">
+                  <svg class="post-form__contrast-icon" width="32" height="32" viewBox="-35.422 -7.96 32 32" aria-labelledby="title">
                     <title>Контраст</title>
-                    <use xlink:href="img/sprite.svg#contrast-icon"></use>
+                    <path fill="#b5b9be" d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/><path fill="#b5b9be" d="M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"/>
                   </svg>
                 </li>
               </ul>
@@ -334,9 +357,9 @@
       <div class="footer__copyright">
         <span>Разработано</span>
         <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="footer__academy-icon" width="27" height="34" aria-labelledby="title">
-            <title>HTML Academy</title>
-            <use xlink:href="img/sprite.svg#academy-icon"></use>
+          <span class="visually-hidden">HTML Academy</span>
+          <svg width="27" height="34" viewBox="0 0 27 34">
+            <path fill="#d22856" d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/>
           </svg>
         </a>
       </div>

@@ -34,10 +34,21 @@
 .footer__social {
   width: 45px;
   height: 45px;
-  border: 3px solid @border-gray;
+  cursor: pointer;
+  border: 3px solid #e9ebec;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover,
+  &:focus {
+    border-color: @base-color;
+  }
+
+  &:active {
+    border-color: #e9ebec;
+    opacity: 0.7;
+  }
 
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
@@ -62,6 +73,15 @@
 
 .footer__academy {
   align-self: baseline;
+}
+
+.footer__academy:hover path,
+.footer__academy:focus path {
+  fill: #283645;
+}
+
+.footer__academy:active path {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

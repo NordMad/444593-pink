@@ -17,6 +17,10 @@
   display: none;
 }
 
+.reviews__scroll {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .reviews {
     padding: 40px 0 20px;
@@ -84,5 +88,38 @@
 
   .reviews__toggles {
     display: none;
+  }
+
+  .reviews__scroll {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    padding: 0;
+    top: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    &--left {
+      left: 10px;
+    }
+
+    &--right {
+      right: 10px;
+    }
+  }
+
+  .reviews__scroll path {
+    opacity: 0.3;
+  }
+
+  .reviews__scroll:hover path,
+  .reviews__scroll:focus path {
+    opacity: 0.6;
+  }
+
+  .reviews__scroll:active path {
+    opacity: 0.1;
   }
 }
