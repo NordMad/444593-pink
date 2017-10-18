@@ -29,6 +29,38 @@
   }
 }
 
+.button--download:hover,
+.button--download:focus {
+  color: @pink;
+  background-color: @white;
+}
+
+.button--download:active {
+  color: fade(@pink, 30%);
+}
+
+.button--post:hover,
+.button--post:focus {
+  color: @white;
+  background-color: @pink;
+}
+
+.button--post:active {
+  color: fade(@white, 30%);
+}
+
+.button--reset:hover,
+.button--reset:focus {
+  opacity: 0.2;
+}
+
+.button--reset:active {
+  color: fade(@white, 30%);
+  background-color: @black;
+  border-color: black;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .button {
     width: 254px;

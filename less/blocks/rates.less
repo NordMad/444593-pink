@@ -78,6 +78,7 @@
 }
 
 .rates__item {
+  position: relative;
   min-width: 276px;
   height: 61px;
   padding: 0 22px;
@@ -85,9 +86,37 @@
   background-color: @white;
   border: 2px solid @gray;
 
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 27px;
+    height: 26px;
+    right: 19px;
+    top: 15px;
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   &--hidden {
     display: none;
+
+    &::after {
+      display: none;
+    }
   }
+
+  &--included {
+    &::after {
+      width: 31px;
+      height: 21px;
+      right: 17px;
+      top: 20px;
+      background-image: url("../img/icon-yes.svg");
+    }
+  }
+
 }
 
 .rates__toggles {
@@ -128,6 +157,18 @@
     min-width: 153px;
     height: 46px;
     font-size: 0;
+
+    &::after {
+      right: 63px;
+      top: 9px;
+    }
+
+    &--included {
+      &::after {
+        right: 61px;
+        top: 13px;
+      }
+    }
   }
 
   .rates__item--hidden {
@@ -170,6 +211,18 @@
   .rates__item {
     min-width: 234px;
     height: 61px;
+
+    &::after {
+      right: 103px;
+      top: 17px;
+    }
+
+    &--included {
+      &::after {
+        right: 101px;
+        top: 22px;
+      }
+    }
   }
 
   .rates__item--hidden {

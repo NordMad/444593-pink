@@ -50,7 +50,7 @@
           </g>
         </symbol>
         <symbol id="footer-logo">
-          <g class="footer__logo-pink">
+          <g class="footer__logo-pink">s
             <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
             <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
             <path fill="#283645" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z"/>
@@ -89,6 +89,9 @@
             </g>
           </g>
         </symbol>
+        <symbol version="1" xmlns="http://www.w3.org/2000/svg" id="timer" viewbox="0 0 298 345">
+          <path fill="#dedede" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+        </symbol>
       </defs>
     </svg>
     <header class="header">
@@ -102,31 +105,33 @@
               </svg>
             </a>
             <button class="header__toggle">
-              <svg class="header__menu-close" width="24" height="23" aria-labelledby="title">
-                <title>Открыть/Закрыть меню</title>
-                <use xlink:href="img/sprite.svg#menu-close"></use>
-              </svg>
+              <span class="visually-hidden">Открыть/Закрыть</span>
+              <object class="header__menu-icon header__menu-icon--hidden" data="img/icon-menu-burger.svg" type="image/svg+xml" width="50" height="24"></object>
+              <object class="header__menu-icon" data="img/icon-menu-cross.svg" type="image/svg+xml" width="24" height="23"></object>
             </button>
           </div>
           <nav class="site-nav">
             <ul class="site-nav__list">
-              <li class="site-nav__item site-nav__item--active">
-                <a>Главная</a>
+              <li class="site-nav__item">
+                <a class="site-nav__active">Главная</a>
               </li>
               <li class="site-nav__item">
-                <a href="photo.html">Фотографии</a>
+                <a class="site-nav__link" href="photo.html">Фотографии</a>
               </li>
               <li class="site-nav__item">
-                <a href="form.html">Конкурс</a>
+                <a class="site-nav__link" href="form.html">Конкурс</a>
               </li>
               <li class="site-nav__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                <a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </nav>
         </section>
         <section class="download-app">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
             <img class="download-app__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение Pink">
@@ -139,7 +144,7 @@
                 <a href="#">
                   <svg class="download-app__apple-icon" width="47" height="56" aria-labelledby="title">
                     <title>Apple</title>
-                    <use xlink:href="img/sprite.svg#apple-icon"></use>
+                    <use xlink:href="img/logo-applications-sprite.svg#apple-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -147,7 +152,7 @@
                 <a href="#">
                   <svg class="download-app__android-icon" width="43" height="47" aria-labelledby="title">
                     <title>Android</title>
-                    <use xlink:href="img/sprite.svg#android-icon"></use>
+                    <use xlink:href="img/logo-applications-sprite.svg#android-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -155,7 +160,7 @@
                 <a href="#">
                   <svg class="download-app__windows-icon" width="44" height="41" aria-labelledby="title">
                     <title>Windows OS</title>
-                    <use xlink:href="img/sprite.svg#windows-icon"></use>
+                    <use xlink:href="img/logo-applications-sprite.svg#windows-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -178,6 +183,7 @@
             <ul class="advantages__list">
               <li class="advantages__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
                   <img class="advantages__phone" alt="Экран телефона">
                 </picture>
@@ -186,6 +192,7 @@
               </li>
               <li class="advantages__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
                   <img class="advantages__phone" alt="Экран телефона">
                 </picture>
@@ -194,6 +201,7 @@
               </li>
               <li class="advantages__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
                   <img class="advantages__phone" alt="Экран телефона">
                 </picture>
@@ -202,6 +210,8 @@
               </li>
             </ul>
             <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img class="advantages__iphone" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Экран телефона">
             </picture>
@@ -234,6 +244,16 @@
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             <span class="reviews__info">25 лет, водитель трамвая</span>
           </div>
+          <button class="reviews__scroll reviews__scroll--left" type="button">
+            <svg width="22" height="41" viewBox="0 0 22 41">
+              <path fill="#283645" d="M2.045 20.859L21.458 1.446A.847.847 0 0 0 20.261.248L.248 20.261a.846.846 0 0 0 0 1.197l20.013 20.013a.843.843 0 0 0 1.198 0 .847.847 0 0 0 0-1.198L2.045 20.859z"/>
+            </svg>
+          </button>
+          <button class="reviews__scroll reviews__scroll--right" type="button">
+            <svg width="22" height="41" viewBox="0 0 22 41">
+              <path fill="#283645" d="M19.661 20.859L.248 1.446A.847.847 0 0 1 1.445.248L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.471a.843.843 0 0 1-1.198 0 .847.847 0 0 1 0-1.198l19.414-19.414z"/>
+            </svg>
+          </button>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
@@ -333,9 +353,9 @@
       <div class="footer__copyright">
         <span>Разработано</span>
         <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="footer__academy-icon" width="27" height="34" aria-labelledby="title">
-            <title>HTML Academy</title>
-            <use xlink:href="img/sprite.svg#academy-icon"></use>
+          <span class="visually-hidden">HTML Academy</span>
+          <svg width="27" height="34" viewBox="0 0 27 34">
+            <path fill="#d22856" d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/>
           </svg>
         </a>
       </div>
