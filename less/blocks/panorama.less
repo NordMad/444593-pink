@@ -1,21 +1,60 @@
-.panorama__image {
-  display: block;
+.panorama {
   width: 320px;
-  height: 137px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.panorama__image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  height: 137px;
   background-color: @gray;
+
+  &::after {
+    position: absolute;
+    content: "Панорама дня";
+    width: 140px;
+    height: 36px;
+    top: 0;
+    right: 20px;
+    background-color: @pink;
+    color: @white;
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .panorama__image {
+  .panorama {
     width: 660px;
+  }
+
+  .panorama__image {
     height: 509px;
+
+    &::after {
+      top: 57px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .panorama__image {
+  .panorama {
     width: 1200px;
+  }
+
+  .panorama__image {
     height: 506px;
+
+    &::after {
+      top: 54px;
+      right: 130px;
+    }
   }
 }

@@ -1,12 +1,22 @@
 .popup {
   display: none;
-  padding-top: 40px;
+  position: fixed;
+  width: 320px;
   margin: 0 auto;
+  padding-top: 40px;
+  top: 35%;
   text-align: center;
+  background-color: @white;
   border-radius: 3px;
+  box-shadow: 0 7px 15px 0 fade(@black, 15%);
+  z-index: 2;
 
   &--fail {
     padding: 45px 0 20px;
+  }
+
+  &--visible {
+    display: block;
   }
 }
 
@@ -18,7 +28,7 @@
 }
 
 .popup__description {
-  padding: 0 20px;
+  padding: 0 25px;
   margin: 30px 0;
 }
 
@@ -30,6 +40,7 @@
 @media (min-width: @tablet-width) {
   .popup {
     width: 460px;
+    margin-left: 100px;
     padding-top: 40px;
     box-sizing: border-box;
 
@@ -62,6 +73,11 @@
 @media (min-width: @desktop-width) {
   .popup--success {
     width: 780px;
+    margin-left: 90px;
+  }
+
+  .popup--fail {
+    margin-left: 250px;
   }
 
   .popup__text-block {

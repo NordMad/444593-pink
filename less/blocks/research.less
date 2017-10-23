@@ -14,16 +14,21 @@
     clear: both;
   }
 
-  .research__timer {
+  .research__image {
     position: relative;
     float: left;
     margin-right: 71px;
   }
 
+  .research__timer {
+    width: 238px;
+    height: 276px;
+  }
+
   .research__timer-number {
     position: absolute;
     left: 64px;
-    top: 80px;
+    top: 78px;
     color: @pink;
     font-size: 96px;
     line-height: 149.5px;
@@ -36,10 +41,13 @@
 
   .research__caption {
     margin: 0;
-    padding-right: 130px;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
+  }
+
+  .research__description {
+    margin-bottom: 8px;
   }
 
   .research__link {
@@ -50,31 +58,17 @@
 
 @media (min-width: @desktop-width) {
   .research {
-    padding: 40px 0 65px;
+    padding: 35px 0 65px;
     background-color: @light-gray;
   }
 
   .research__image {
-    width: 298px;
-    height: 345px;
     margin-right: 68px;
   }
 
   .research__timer {
-    margin-right: 68px;
-  }
-
-  .research__timer__image {
     width: 298px;
     height: 345px;
-  }
-
-  .research__timer-circle {
-    r: 118px;
-    cx: 149.5px;
-    cy: 195.5px;
-    stroke-width: 17px;
-    fill: #dedede;
   }
 
   .research__timer-number {
@@ -93,11 +87,19 @@
     line-height: 30px;
   }
 
+  .research__caption br {
+    display: none;
+  }
+
   .research__description {
     padding-right: 55px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .research__description br {
+    display: none;
   }
 
   .research__link {

@@ -1,7 +1,29 @@
-.slider__toggle {
+.slider__radio {
+  display: none;
+}
+
+.slider__button {
+  display: inline-block;
+  width: 6px;
   height: 6px;
-  font-size: 0;
-  background-color: #b5b9be;
-  border: none;
+  margin: 0 5px;
+  background-color: fade(@base-color, 30%);
+  box-sizing: content-box;
+  border: 3px solid transparent;
   border-radius: 50%;
+  background-clip: padding-box;
+  cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: fade(@base-color, 60%);
+    }
+    &:active {
+      background-color: fade(@base-color, 10%);
+    }
+}
+
+.slider__radio:checked + .slider__button {
+  background-color: transparent;
+  border-color: @base-color;
 }
