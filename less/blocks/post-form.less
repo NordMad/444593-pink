@@ -10,8 +10,8 @@
 
 .post-form__controls-block {
   display: flex;
-  min-height: 121px;
-  padding: 20px;
+  min-height: 99px;
+  padding: 43px 40px 19px;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -22,8 +22,84 @@
   width: 198px;
   height: 44px;
   display: flex;
+  margin-bottom: auto;
+  margin-right: 10px;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.post-form__controls-item path {
+  opacity: 0.3;
+}
+
+.post-form__controls-item:hover path {
+  opacity: 0.5;
+}
+
+.post-form__controls-item {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 240px;
+    height: 2px;
+    background-color: @base-color;
+  }
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: @white;
+    border: 2px solid @pink;
+    border-radius: 50%;
+  }
+  &--crop::before {
+    display: block;
+    top: 83px;
+    left: -18px;
+  }
+  &--active::after {
+    display: block;
+    top: 77px;
+    left: 175px;
+  }
+  &--active path {
+    fill: @pink;
+    opacity: 1;
+  }
+
+  &--active:hover path {
+    opacity: 1;
+  }
+}
+
+.post-form__controls-item:hover::after {
+  background-color: @pink;
+  cursor: pointer;
+}
+
+.post-form__crop-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+
+.post-form__fill-icon {
+  display: block;
+  width: 48px;
+  height: 43px;
+}
+
+.post-form__contrast-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 .post-form__buttons {
@@ -32,7 +108,7 @@
 
 @media (min-width: @tablet-width) {
   .post-form {
-    padding: 55px 20px;
+    padding: 40px 10px 55px 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -41,11 +117,19 @@
     width: 300px;
     height: 400px;
     padding: 0;
+    margin-top: 15px;
     background-color: @gray;
+  }
+
+  .post-form__controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .post-form__controls-block {
     padding: 0;
+    padding-left: 45px;
     border: none;
   }
 
@@ -59,79 +143,147 @@
   .post-form__controls-item {
     display: flex;
     align-items: center;
-    height: 69px;
+    min-height: 68px;
     border-bottom: 1px solid @gray;
+
+    &::before {
+      display: block;
+      width: 202px;
+      top: 36px;
+      left: 55px;
+    }
+    &::after {
+      display: block;
+      top: 30px;
+    }
+
+    &--crop::after {
+      left: 201px;
+    }
+
+    &--fill::after {
+      left: 80px;
+    }
+
+    &--contrast::after {
+      left: 151px;
+    }
   }
 
-  .post-form__controls {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .post-form__controls-item--crop {
+    margin-top: 1px;
+  }
+
+  .post-form__controls-item--fill {
+    min-height: 72px;
+  }
+
+  .post-form__controls-item path {
+    fill: @pink;
+    opacity: 1;
+  }
+
+  .post-form__controls-item:hover path {
+    opacity: 1;
   }
 
   .post-form__crop-icon {
     width: 22px;
     height: 22px;
+    margin-left: 3px;
   }
 
   .post-form__fill-icon {
     width: 24px;
     height: 22px;
+    margin-left: 3px;
+    margin-top: 5px;
   }
 
   .post-form__contrast-icon {
     width: 16px;
     height: 16px;
-  }
-
-  .post-form__range {
-    display: none;
+    margin-left: 8px;
   }
 
   .post-form__buttons {
     width: 300px;
     padding: 0;
+    padding-left: 28px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .post-form {
     justify-content: space-between;
-    padding: 57px 60px;
+    padding: 40px 60px 57px;
   }
 
   .post-form__picture {
-    margin: 0 20px;
+    margin: 17px 20px 0;
   }
 
   .post-form__controls {
     width: 410px;
   }
 
+  .post-form__controls-block {
+    padding-left: 0;
+  }
+
   .post-form__controls-list {
     width: 410px;
     height: 200px;
+    margin: 0;
     flex-direction: column;
+  }
+
+  .post-form__controls-item {
+
+    &::before {
+      width: 288px;
+      left: 93px;
+    }
+
+    &--crop::after {
+      left: 163px;
+    }
+
+    &--fill::after {
+      left: 339px;
+    }
+
+    &--contrast::after {
+      left: 252px;
+    }
+  }
+
+  .post-form__controls-item--crop {
+    margin-top: 2px;
   }
 
   .post-form__crop-icon {
     width: 44px;
     height: 44px;
+    margin: 0;
   }
 
   .post-form__fill-icon {
     width: 48px;
     height: 43px;
+    margin: 0;
   }
 
   .post-form__contrast-icon {
     width: 32px;
     height: 32px;
+    margin-left: 6px;
   }
 
   .post-form__buttons {
     width: 410px;
     display: flex;
+    padding: 0;
     justify-content: space-between;
   }
 }

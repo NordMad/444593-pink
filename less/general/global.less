@@ -17,3 +17,13 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow:
+      -5px 2px 10px 0 fade(@black, 10%),
+      5px 2px 10px 0 fade(@black, 10%);
+  }
+}
