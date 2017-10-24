@@ -28,7 +28,6 @@
   align-items: center;
 }
 
-
 .post-form__controls-item path {
   opacity: 0.3;
 }
@@ -49,6 +48,7 @@
     height: 2px;
     background-color: @base-color;
   }
+
   &::after {
     display: none;
     position: absolute;
@@ -59,16 +59,19 @@
     border: 2px solid @pink;
     border-radius: 50%;
   }
+
   &--crop::before {
     display: block;
     top: 83px;
     left: -18px;
   }
+
   &--active::after {
     display: block;
     top: 77px;
     left: 175px;
   }
+
   &--active path {
     fill: @pink;
     opacity: 1;
@@ -152,6 +155,7 @@
       top: 36px;
       left: 55px;
     }
+
     &::after {
       display: block;
       top: 30px;
@@ -239,7 +243,6 @@
   }
 
   .post-form__controls-item {
-
     &::before {
       width: 288px;
       left: 93px;

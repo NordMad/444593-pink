@@ -14,13 +14,14 @@
   background-clip: padding-box;
   cursor: pointer;
 
-    &:hover,
-    &:focus {
-      background-color: fade(@base-color, 60%);
-    }
-    &:active {
-      background-color: fade(@base-color, 10%);
-    }
+  &:hover,
+  &:focus {
+    background-color: fade(@base-color, 60%);
+  }
+
+  &:active {
+    background-color: fade(@base-color, 10%);
+  }
 }
 
 .slider__radio:checked + .slider__button {

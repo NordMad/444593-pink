@@ -49,11 +49,18 @@
 .footer__social {
   width: 45px;
   height: 45px;
+}
+
+.footer__social a {
+  display: block;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
-  border: 3px solid #e9ebec;
+  border: 3px solid fade(@base-color, 10%);
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -61,22 +68,22 @@
   }
 
   &:active {
-    border-color: #e9ebec;
-    opacity: 0.7;
-  }
-
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-  }
-
-  &--facebook {
-    background-image: url("../img/icon-facebook.svg");
-  }
-
-  &--youtube {
-    background-image: url("../img/icon-youtube.svg");
+    opacity: 0.1;
   }
 }
+
+.footer__twitter {
+  background-image: url("../img/icon-twitter.svg");
+}
+
+.footer__facebook {
+  background-image: url("../img/icon-facebook.svg");
+}
+
+.footer__youtube {
+  background-image: url("../img/icon-youtube.svg");
+}
+
 
 .footer__copyright {
   display: flex;
@@ -120,8 +127,8 @@
   .footer__list {
     align-items: center;
     margin: 0;
-    margin-right: 12px;
-    margin-bottom: 2px;
+    margin-right: 20px;
+    margin-bottom: 3px;
   }
 }
 
@@ -129,11 +136,12 @@
   .footer {
     width: 940px;
     height: 197px;
-    padding: 0 130px;
+    padding: 0 10px;
   }
 
   .footer__list {
     margin: 0;
+    margin-left: 5px;
   }
 
   .footer__logo-mobile {
