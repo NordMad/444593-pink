@@ -111,5 +111,5 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "sprite", "html", "minify", "compress", done);
+  run("clean", "copy", "style", "html", "minify", "compress", done);
 })
