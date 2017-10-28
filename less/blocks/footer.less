@@ -47,8 +47,8 @@
 }
 
 .footer__social {
-  width: 45px;
-  height: 45px;
+  width: 51px;
+  height: 51px;
 }
 
 .footer__social a {
@@ -59,7 +59,6 @@
   border: 3px solid fade(@base-color, 10%);
   border-radius: 50%;
   background-repeat: no-repeat;
-  background-position: center;
   outline: none;
 
   &:hover,
@@ -74,14 +73,17 @@
 
 .footer__twitter {
   background-image: url("../img/icon-twitter.svg");
+  background-position: center 55%;
 }
 
 .footer__facebook {
   background-image: url("../img/icon-facebook.svg");
+  background-position: center;
 }
 
 .footer__youtube {
   background-image: url("../img/icon-youtube.svg");
+  background-position: 55% center;
 }
 
 
@@ -128,7 +130,7 @@
     align-items: center;
     margin: 0;
     margin-right: 20px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
   }
 }
 
@@ -141,7 +143,11 @@
 
   .footer__list {
     margin: 0;
-    margin-left: 5px;
+    margin-left: 10px;
+  }
+
+  .footer__list--main {
+    margin-left: 4px;
   }
 
   .footer__logo-mobile {
@@ -153,7 +159,12 @@
   }
 
   .footer__copyright {
-    width: 152px;
+    width: 153px;
+    height: 51px;
     font-size: 18px;
+  }
+
+  .footer__academy {
+    align-self: flex-end;
   }
 }

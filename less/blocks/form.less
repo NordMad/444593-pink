@@ -4,6 +4,7 @@
 }
 
 .form fieldset {
+  position: relative;
   border-width: 0;
 }
 
@@ -45,13 +46,17 @@
 
 .form__legend {
   .label();
-  margin: 0 auto;
+  width: auto;
   padding: 0 20px;
   line-height: 18px;
   text-align: center;
 
-  &--hidden {
+  &--contacts {
     display: none;
+  }
+
+  &--impressions {
+    margin-left: 30px;
   }
 }
 
@@ -78,6 +83,7 @@
   display: none;
 }
 
+.form__checkbox:active + .form__achievement-label::before,
 .form__checkbox:checked + .form__achievement-label::before {
   background-image: url("../img/icon-yes-checkbox.svg");
   background-repeat: no-repeat;
@@ -88,6 +94,7 @@
   position: relative;
   margin-left: 69px;
   cursor: pointer;
+  outline: none;
 
   &::before {
     position: absolute;
@@ -142,7 +149,7 @@
   display: none;
 }
 
-.form__radio:checked + .form__application-label::after {
+.form__application-label::after {
   position: absolute;
   content: "";
   width: 15px;
@@ -150,14 +157,20 @@
   top: 5px;
   left: -56px;
   border-radius: 50%;
-  background-color: @pink;
+  background-color: transparent;
   z-index: 2;
+}
+
+.form__radio:active + .form__application-label::after,
+.form__radio:checked + .form__application-label::after {
+  background-color: @pink;
 }
 
 .form__application-label {
   position: relative;
   margin-left: 67px;
   cursor: pointer;
+  outline: none;
 
   &::before {
     position: absolute;
@@ -273,7 +286,7 @@
     left: -60px;
   }
 
-  .form__radio:checked + .form__application-label::after {
+  .form__application-label::after {
     left: -48px;
   }
 
@@ -324,8 +337,27 @@
     order: 1;
   }
 
-  .form__legend--hidden {
-    display: table;
+  .form__legend {
+    padding: 0 30px;
+
+    &--applications {
+      margin-left: 70px;
+      padding: 0 25px;
+    }
+
+    &--contacts {
+      display: table;
+      margin-left: 120px;
+    }
+
+    &--achievements {
+      margin-left: 90px;
+    }
+
+    &--impressions {
+      padding: 0 35px;
+      margin-left: 120px;
+    }
   }
 
   .form__achievements-block {
@@ -342,7 +374,7 @@
     padding: 28px 49px 20px;
   }
 
-  .form__achievement-label&::before {
+  .form__achievement-label::before {
     left: -60px;
   }
 
@@ -402,7 +434,26 @@
   }
 
   .form__legend {
-    padding: 0;
+    padding: 0 30px;
+
+    &--applications {
+      margin-left: 0;
+      padding: 0 6px;
+    }
+
+    &--contacts {
+      display: table;
+      margin-left: 280px;
+    }
+
+    &--achievements {
+      margin-left: 250px;
+    }
+
+    &--impressions {
+      padding: 0 35px;
+      margin-left: 280px;
+    }
   }
 
   .form__applications {
@@ -442,16 +493,20 @@
 
   .form__achievements-list {
     display: flex;
-    height: 165px;
-    padding: 26px 60px 30px 116px;
+    min-height: 165px;
+    padding: 26px 58px 30px;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__achievements-column {
+    display: flex;
     flex-direction: column;
-    align-content: space-between;
   }
 
   .form__achievement {
     height: 30px;
-    margin: 21px 0 31px;
+    margin: 21px 0 31px 60px;
     padding: 0;
   }
 
