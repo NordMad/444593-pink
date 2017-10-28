@@ -90,37 +90,43 @@
             </div>
             <div class="form__achievements-block">
               <fieldset class="form__achievements">
-                <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+                <legend class="form__legend form__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="form__achievements-list">
-                  <li class="form__achievement">
-                    <input id="selfie" class="form__checkbox" type="checkbox" name="selfie" checked>
-                    <label class="form__achievement-label" for="selfie" tabindex="0">Сделал селфи с акулой</label>
-                  </li>
-                  <li class="form__achievement">
-                    <input id="sunburn" class="form__checkbox" type="checkbox" name="sunburn" checked>
-                    <label class="form__achievement-label" for="sunburn" tabindex="0">Обгорел на пляже</label>
-                  </li>
-                  <li class="form__achievement">
-                    <input id="chucky" class="form__checkbox" type="checkbox" name="chucky">
-                    <label class="form__achievement-label" for="chucky" tabindex="0">Видел Чака Норриса</label>
-                  </li>
-                  <li class="form__achievement">
-                    <input id="souvenirs" class="form__checkbox" type="checkbox" name="souvenirs">
-                    <label class="form__achievement-label" for="souvenirs" tabindex="0">Накупил сувениров</label>
-                  </li>
-                  <li class="form__achievement">
-                    <input id="defender" class="form__checkbox" type="checkbox" name="defender" checked>
-                    <label class="form__achievement-label" for="defender" tabindex="0">Удержал башню</label>
-                  </li>
-                  <li class="form__achievement">
-                    <input id="destroyer" class="form__checkbox" type="checkbox" name="destroyer">
-                    <label class="form__achievement-label" for="destroyer" tabindex="0">Разгромил отель</label>
-                  </li>
+                  <ul class="form__achievements-column">
+                    <li class="form__achievement">
+                      <input id="selfie" class="form__checkbox" type="checkbox" name="selfie" checked>
+                      <label class="form__achievement-label" for="selfie" tabindex="0">Сделал селфи с акулой</label>
+                    </li>
+                    <li class="form__achievement">
+                      <input id="sunburn" class="form__checkbox" type="checkbox" name="sunburn" checked>
+                      <label class="form__achievement-label" for="sunburn" tabindex="0">Обгорел на пляже</label>
+                    </li>
+                  </ul>
+                  <ul class="form__achievements-column">
+                    <li class="form__achievement">
+                      <input id="chucky" class="form__checkbox" type="checkbox" name="chucky">
+                      <label class="form__achievement-label" for="chucky" tabindex="0">Видел Чака Норриса</label>
+                    </li>
+                    <li class="form__achievement">
+                      <input id="souvenirs" class="form__checkbox" type="checkbox" name="souvenirs">
+                      <label class="form__achievement-label" for="souvenirs" tabindex="0">Накупил сувениров</label>
+                    </li>
+                  </ul>
+                  <ul class="form__achievements-column">
+                    <li class="form__achievement">
+                      <input id="defender" class="form__checkbox" type="checkbox" name="defender" checked>
+                      <label class="form__achievement-label" for="defender" tabindex="0">Удержал башню</label>
+                    </li>
+                    <li class="form__achievement">
+                      <input id="destroyer" class="form__checkbox" type="checkbox" name="destroyer">
+                      <label class="form__achievement-label" for="destroyer" tabindex="0">Разгромил отель</label>
+                    </li>
+                  </ul>
                 </ul>
               </fieldset>
             </div>
             <fieldset class="form__contacts">
-              <legend class="form__legend form__legend--hidden">Контактная информация</legend>
+              <legend class="form__legend  form__legend--contacts">Контактная информация</legend>
               <div class="form__contacts-block">
                 <div class="form__contacts-input form__contacts-input--phone">
                   <label class="form__label" for="phone-field">Номер телефона</label>
@@ -134,18 +140,18 @@
             </fieldset>
             <div class="form__applications-block">
               <fieldset class="form__applications">
-                <legend class="form__legend">С каким приложением путешествовали?</legend>
+                <legend class="form__legend form__legend--applications">С каким приложением путешествовали?</legend>
                 <ul class="form__applications-list">
                   <li class="form__application-item">
-                    <input id="application-ios" class="form__radio" type="radio" name="application" checked>
+                    <input id="application-ios" class="form__radio" type="radio" name="application" value="ios" checked>
                     <label class="form__application-label" for="application-ios" tabindex="0">Pink для iOS</label>
                   </li>
                   <li class="form__application-item">
-                    <input id="application-android" class="form__radio" type="radio" name="application">
+                    <input id="application-android" class="form__radio" type="radio" name="application" value="android">
                     <label class="form__application-label" for="application-android" tabindex="0">Pink на Android</label>
                   </li>
                   <li class="form__application-item">
-                    <input id="application-windows" class="form__radio" type="radio" name="application">
+                    <input id="application-windows" class="form__radio" type="radio" name="application" value="windows">
                     <label class="form__application-label" for="application-windows" tabindex="0">Windows Phone</label>
                   </li>
                 </ul>
@@ -153,7 +159,7 @@
             </div>
             <div class="form__impressions-block">
               <fieldset class="form__impressions">
-                <legend class="form__legend">Опишите свои эмоции</legend>
+                <legend class="form__legend form__legend--impressions">Опишите свои эмоции</legend>
                 <textarea class="form__textarea" name="impressions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </fieldset>
             </div>
@@ -174,7 +180,7 @@
           <div class="popup popup--fail">
             <span class="popup__caption">Что-то пошло не так!</span>
             <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="form-button" type="button">Ок</button>
+            <button class="form-button form-button--fail" type="button">Ок</button>
           </div>
         </div>
       </section>

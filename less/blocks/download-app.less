@@ -46,7 +46,7 @@
 
 @media (min-width: @tablet-width) {
   .download-app {
-    min-height: 729px;
+    min-height: 727px;
     padding: 0 20px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     overflow: hidden;
@@ -63,10 +63,12 @@
   }
 
   .download-app__block {
-    height: 440px;
+    min-height: 440px;
     width: 300px;
+    margin-top: 175px;
     padding: 0;
-    transform: translateY(175px);
+    padding-bottom: 20px;
+    transform: translateY(0);
     background-color: transparent;
   }
 
@@ -91,7 +93,7 @@
 
 @media (min-width: @desktop-width) {
   .download-app {
-    min-height: 853px;
+    min-height: 633px;
     padding: 0 10px;
     overflow: visible;
     background-image: none;
@@ -102,8 +104,8 @@
   }
 
   .download-app__block {
-    height: 510px;
-    transform: translateY(220px);
+    min-height: 510px;
+    margin-top: 220px;
   }
 
   .download-app__caption {

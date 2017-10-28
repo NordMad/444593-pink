@@ -30,6 +30,37 @@
   margin-top: 25px;
 }
 
+.reviews__radio {
+  display: none;
+}
+
+.reviews__radio-button {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  background-color: fade(@base-color, 30%);
+  box-sizing: content-box;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-clip: padding-box;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: fade(@base-color, 60%);
+  }
+
+  &:active {
+    background-color: fade(@base-color, 10%);
+  }
+}
+
+.reviews__radio:checked + .reviews__radio-button {
+  background-color: transparent;
+  border-color: @base-color;
+}
+
 @media (min-width: @tablet-width) {
   .reviews {
     padding: 30px 0 5px;
@@ -98,6 +129,10 @@
 
   .reviews__text {
     margin-bottom: 35px;
+  }
+
+  .reviews__text span {
+    display: none;
   }
 
   .reviews__info {

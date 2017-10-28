@@ -34,7 +34,7 @@ gulp.task("style", function() {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("img/icon-*.svg")
+  return gulp.src("img/app-*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -111,5 +111,5 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "html", "minify", "compress", done);
+  run("clean", "copy", "style", "sprite", "html", "minify", "compress", done);
 })

@@ -156,6 +156,14 @@
       left: 55px;
     }
 
+    &--crop::before {
+      top: 34px;
+    }
+
+    &--contrast::before {
+      top: 35px;
+    }
+
     &::after {
       display: block;
       top: 30px;
@@ -163,6 +171,7 @@
 
     &--crop::after {
       left: 201px;
+      top: 28px;
     }
 
     &--fill::after {
@@ -171,6 +180,7 @@
 
     &--contrast::after {
       left: 151px;
+      top: 29px;
     }
   }
 
@@ -220,7 +230,7 @@
 @media (min-width: @desktop-width) {
   .post-form {
     justify-content: space-between;
-    padding: 40px 60px 57px;
+    padding: 40px 60px 56px;
   }
 
   .post-form__picture {

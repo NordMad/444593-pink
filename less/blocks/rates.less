@@ -123,6 +123,37 @@
   margin-top: auto;
 }
 
+.rates__radio {
+  display: none;
+}
+
+.rates__radio-button {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  background-color: fade(@base-color, 30%);
+  box-sizing: content-box;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-clip: padding-box;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: fade(@base-color, 60%);
+  }
+
+  &:active {
+    background-color: fade(@base-color, 10%);
+  }
+}
+
+.rates__radio:checked + .rates__radio-button {
+  background-color: transparent;
+  border-color: @base-color;
+}
+
 @media (min-width: @tablet-width) {
   .rates {
     height: 218px;
@@ -185,7 +216,9 @@
 
 @media (min-width: @desktop-width) {
   .rates {
-    padding: 175px 10px 155px;
+    height: 280px;
+    margin-top: 20px;
+    padding: 150px 10px 100px;
   }
 
   .rates__name {
