@@ -28,11 +28,12 @@
   align-items: center;
 }
 
-.post-form__controls-item path {
+.post-form__controls-item svg {
+  fill: @base-color;
   opacity: 0.3;
 }
 
-.post-form__controls-item:hover path {
+.post-form__controls-item:hover svg {
   opacity: 0.5;
 }
 
@@ -72,12 +73,12 @@
     left: 175px;
   }
 
-  &--active path {
+  &--active svg {
     fill: @pink;
     opacity: 1;
   }
 
-  &--active:hover path {
+  &--active:hover svg {
     opacity: 1;
   }
 }
@@ -192,12 +193,12 @@
     min-height: 72px;
   }
 
-  .post-form__controls-item path {
+  .post-form__controls-item svg {
     fill: @pink;
     opacity: 1;
   }
 
-  .post-form__controls-item:hover path {
+  .post-form__controls-item:hover svg {
     opacity: 1;
   }
 

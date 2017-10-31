@@ -17,18 +17,17 @@
   height: 40px;
 }
 
-.footer__logo-icon:hover path,
-.footer__logo-icon:focus path {
-  fill: @pink;
-}
-
-.footer__logo-icon:active .footer__logo-pink {
+.footer__logo svg {
   fill: @base-color;
-  opacity: 0.3;
 }
 
-.footer__logo-icon:active .footer__logo-glasses {
+.footer__logo svg:hover,
+.footer__logo svg:focus {
   fill: @pink;
+}
+
+.footer__logo svg:active {
+  fill: @base-color;
   opacity: 0.3;
 }
 
@@ -99,12 +98,16 @@
   align-self: baseline;
 }
 
-.footer__academy:hover path,
-.footer__academy:focus path {
+.footer__academy svg {
+  fill: @pink;
+}
+
+.footer__academy:hover svg,
+.footer__academy:focus svg {
   fill: @base-color;
 }
 
-.footer__academy:active path {
+.footer__academy:active svg {
   opacity: 0.3;
 }
 

@@ -33,12 +33,16 @@
   height: 22px;
 }
 
-.header__logo-icon:hover path,
-.header__logo-icon:focus path {
+.header__logo svg {
+  fill: @white;
+}
+
+.header__logo svg:hover,
+.header__logo svg:focus {
   fill: @pink;
 }
 
-.header__logo-icon:active path {
+.header__logo svg:active {
   fill: @white;
   opacity: 0.3;
 }
@@ -64,12 +68,16 @@
   display: block;
 }
 
-.header__toggle:hover path,
-.header__toggle:focus path {
-  fill: #d22856;
+.header__toggle svg {
+  fill: @white;
 }
 
-.header__toggle:active path {
+.header__toggle:hover svg,
+.header__toggle:focus svg {
+  fill: @pink;
+}
+
+.header__toggle:active svg {
   opacity: 0.3;
 }
 
